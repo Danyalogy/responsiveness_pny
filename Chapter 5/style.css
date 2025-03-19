@@ -60,36 +60,91 @@ nav {
   text-transform: capitalize;
   font-size: 1rem;
 }
-.contact-btn {
+.btn {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem 2rem;
   border: none;
   text-transform: capitalize;
   border-radius: 50px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 .list-icon {
   display: none;
   font-size: 2rem;
 }
+.hero-section {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-left h1 {
+  font-size: 3rem;
+}
+.hero-left p {
+  font-size: 1.5rem;
+}
+.hero-left,
+.h-right {
+  width: 50%;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 1rem;
+}
+.demo-btn {
+  align-self: flex-start;
+}
+
 @media (max-width: 1560px) {
   .my-header,
-  .my-nav {
+  .my-nav,
+  .hero-section {
     width: 85%;
   }
 }
 @media (max-width: 1290px) {
+  .my-header,
+  .my-nav,
+  .hero-section {
+    width: 95%;
+  }
+}
+@media (max-width: 1150px) {
   .menu-items {
     display: none;
   }
   .list-icon {
     display: block;
   }
+  .hero-left h1 {
+    font: size 2rem;
+  }
 }
-@media (max-width: 1150px) {
-  .my-header,
-  .my-nav {
-    width: 90%;
+@media (max-width: 860px) {
+  .hero-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+  }
+  .h-left,
+  .h-right {
+    width: 80%;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .demo-btn {
+    align-self: center;
   }
 }
 @media (max-width: 767px) {
@@ -98,6 +153,14 @@ nav {
   }
   .h-left {
     display: none;
+  }
+}
+@media (max-width: 490px) {
+  .contact-btn {
+    display: none;
+  }
+  .hero-left h1 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 470px) {
