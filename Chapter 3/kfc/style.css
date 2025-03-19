@@ -1,0 +1,316 @@
+:root {
+  --main-color: #ea002a;
+  --secondary-color: #1c1816;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+.left {
+  display: flex;
+  gap: 1rem;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.delivery,
+.pickup {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #1c1816;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.navbar i {
+  font-size: 2rem;
+}
+.bucket {
+  position: relative;
+  color: black;
+}
+.b-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.delivery {
+  border: 2px solid var(--main-color);
+}
+.Login-button button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.hero {
+  background-image: url("https://www.kfcpakistan.com/images/df6e46a0-f61f-11ef-a686-15ed49a263d7-Webbannercopy_desktop_image-2025-02-28220342.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.reorder {
+  width: 50%;
+  margin: 2rem auto;
+  display: block;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  border: none;
+  text-transform: uppercase;
+}
+.e-cards {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.explore {
+  width: 70%;
+  margin: auto;
+}
+.e-card {
+  background-color: var(--secondary-color);
+  border-radius: 50% 50% 3% 50%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s;
+}
+.d-card .bi-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: var(--main-color);
+}
+.e-card hr {
+  width: 20%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: var(--main-color);
+  border: none;
+  height: 5px;
+}
+.e-heading,
+.seller,
+d-heading {
+  text-transform: uppercase;
+}
+.e-heading hr,
+.seller hr,
+.deals hr {
+  width: 5%;
+  background-color: var(--main-color);
+  border: none;
+  height: 5px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.e-card:hover {
+  transform: translateY(-20%);
+  background-color: var(--main-color);
+  /* width: 20vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.s-cards {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  /* overflow-x: scroll; */
+}
+.seller {
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  /* display: block;
+  color: white;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  border: none;
+  text-transform: uppercase; */
+}
+.s-card {
+  background-color: var(--secondary-color);
+  padding: 0 0 2rem 2rem;
+  width: 500px;
+  border-radius: 3px;
+}
+
+.s-card h2 {
+  text-transform: capitalize;
+}
+.price {
+  background-color: var(--main-color);
+  font-size: 1.1rem;
+  text-align: right;
+  width: 30%;
+  margin-left: auto;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  padding: 0.1rem;
+}
+.red-dots {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.red-dot {
+  height: 20px;
+  width: 15px;
+  background-color: var(--main-color);
+  border-radius: 0 0 3px 3px;
+}
+.d-cards {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.deals {
+  width: 70%;
+  margin: auto;
+}
+.d-card {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  padding-top: 0;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.d-card img {
+  margin-top: -2rem;
+  transition: all 0.3s;
+}
+.d-image {
+  overflow: hidden;
+}
+.d-card:hover img {
+  transform: scale(1.1);
+}
+.d-card p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+.d-card button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin: auto;
+  display: block;
+  /* transform: translateY(); */
+  margin-bottom: -2rem;
+}
+.images {
+  width: 70%;
+  margin: auto;
+}
+.top-image,
+.bottom-image {
+  display: flex;
+  gap: 1rem;
+}
+.image1,
+.image2,
+.image3,
+.image4 {
+  width: 600px;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image4 {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image4 p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.image4 button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.footer-container {
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.social-container,
+.social-icon a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+.social-icon a {
+  background-color: #fff;
+  font-size: 26px;
+  /* padding: 5px 10px; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}

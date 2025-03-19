@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assingment</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 500px;
+        background: blue;
+        margin: auto;
+        position: relative;
+      }
+      .child {
+        height: 10%;
+        width: 10%;
+        background: red;
+        position: absolute;
+      }
+      .child1 {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        clip-path: polygon(
+          40% 0%,
+          40% 20%,
+          100% 20%,
+          100% 80%,
+          40% 80%,
+          40% 100%,
+          0% 50%
+        );
+        background: red;
+      }
+      .child2 {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        clip-path: polygon(
+          0% 20%,
+          60% 20%,
+          60% 0%,
+          100% 50%,
+          60% 100%,
+          60% 80%,
+          0% 80%
+        );
+      }
+      .child3 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        bottom: 5%;
+        clip-path: polygon(
+          0% 20%,
+          60% 20%,
+          60% 0%,
+          100% 50%,
+          60% 100%,
+          60% 80%,
+          0% 80%
+        );
+      }
+      .child4 {
+        top: 50%;
+        transform: translateY(-50%);
+        clip-path: polygon(
+          40% 0%,
+          40% 20%,
+          100% 20%,
+          100% 80%,
+          40% 80%,
+          40% 100%,
+          0% 50%
+        );
+      }
+      .child5 {
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .child6 {
+        background: gold;
+        right: -15%;
+        top: -15%;
+        width: 150px;
+        height: 150px;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+      .child7 {
+        background: orange;
+        left: -5%;
+        top: -5%;
+        z-index: 3;
+        clip-path: circle();
+        height: 20%;
+        width: 20%;
+      }
+      .child5-circle {
+        height: 70%;
+        width: 80%;
+        background-color: yellow;
+        position: absolute;
+        clip-path: circle();
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .child5-star {
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+      .child8 {
+        height: 100px;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+      }
+      .child8-circle {
+        height: 70%;
+        width: 80%;
+        background-color: yellow;
+        position: absolute;
+        clip-path: circle();
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .child9 {
+        right: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100px;
+      }
+      .child9-circle {
+        height: 70%;
+        width: 80%;
+        background-color: yellow;
+        position: absolute;
+        clip-path: circle();
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child1"></div>
+      <div class="child child2"></div>
+      <div class="child child3"></div>
+      <div class="child child4"></div>
+      <div class="child child5">
+        <div class="child5-circle">
+          <div class="child5-star"></div>
+        </div>
+      </div>
+      <div class="child child6"></div>
+      <div class="child child7"></div>
+      <div class="child child8">
+        <div class="child8-circle"></div>
+      </div>
+      <div class="child child9">
+        <div class="child9-circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

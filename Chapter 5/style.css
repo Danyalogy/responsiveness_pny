@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #21a5d5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+.my-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+.mail,
+.address,
+.h-left,
+.h-right {
+  display: flex;
+  gap: 1rem;
+}
+.h-left i {
+  color: black;
+}
+.h-right i {
+  color: rgb(182, 208, 217);
+  transition: all 0.3s;
+}
+.h-right i:hover {
+  color: rgb(100, 232, 100);
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 0.5rem;
+}
+.my-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.menu-items {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.contact-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+.list-icon {
+  display: none;
+  font-size: 2rem;
+}
+@media (max-width: 1560px) {
+  .my-header,
+  .my-nav {
+    width: 85%;
+  }
+}
+@media (max-width: 1290px) {
+  .menu-items {
+    display: none;
+  }
+  .list-icon {
+    display: block;
+  }
+}
+@media (max-width: 1150px) {
+  .my-header,
+  .my-nav {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    justify-content: flex-start;
+  }
+  .h-left {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .contact-btn {
+    display: none;
+  }
+}

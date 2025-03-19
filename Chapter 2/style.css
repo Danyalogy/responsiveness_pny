@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.red{
+background: rgb(184, 144, 144);
+color:white;
+height: 200px;
+}
+
+.green{
+    background-color: rgb(42, 76, 42);
+    color: aqua;
+    height: 100px;
+
+
+}
